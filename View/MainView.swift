@@ -103,11 +103,11 @@ struct MainView: View {
             }
             .tag("main") // 이 탭의 태그
             // 검색 페이지 탭
-            SearchView()
+            MyPageView() // 마이 페이지 뷰
                 .tabItem {
-                    Label("검색", systemImage: "magnifyingglass")
+                    Label("제작자", systemImage: "person") // 아이콘과 라벨 변경
                 }
-                .tag("search") // 이 탭의 태그
+                .tag("mypage") // 태그 변경
         }
     }
 

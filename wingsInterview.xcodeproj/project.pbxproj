@@ -56,7 +56,7 @@
 		FFFE8D002B4D630600C6CCA7 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF72B4D630500C6CCA7 /* Pretendard-ExtraBold.ttf */; };
 		FFFE8D012B4D630600C6CCA7 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF82B4D630500C6CCA7 /* Pretendard-Bold.ttf */; };
 		FFFE8D022B4D630600C6CCA7 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF92B4D630500C6CCA7 /* Pretendard-Light.ttf */; };
-		FFFE8D052B4D6E5700C6CCA7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFE8D042B4D6E5700C6CCA7 /* SearchView.swift */; };
+		FFFE8D052B4D6E5700C6CCA7 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFE8D042B4D6E5700C6CCA7 /* MyPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,7 +84,7 @@
 		FFFE8CF82B4D630500C6CCA7 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
 		FFFE8CF92B4D630500C6CCA7 /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
 		FFFE8D032B4D637500C6CCA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		FFFE8D042B4D6E5700C6CCA7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FFFE8D042B4D6E5700C6CCA7 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				FFCB08E12B4BA9FA005F79B3 /* MainView.swift */,
-				FFFE8D042B4D6E5700C6CCA7 /* SearchView.swift */,
+				FFFE8D042B4D6E5700C6CCA7 /* MyPageView.swift */,
 				FFCB09312B4CD698005F79B3 /* InterviewQuestionsView.swift */,
 				FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */,
 				FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */,
@@ -334,7 +334,7 @@
 				FFCB092F2B4CD255005F79B3 /* InterviewQuestion.swift in Sources */,
 				FFCB09282B4CC766005F79B3 /* Quote.swift in Sources */,
 				FFCB08E02B4BA9FA005F79B3 /* wingsInterviewApp.swift in Sources */,
-				FFFE8D052B4D6E5700C6CCA7 /* SearchView.swift in Sources */,
+				FFFE8D052B4D6E5700C6CCA7 /* MyPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
