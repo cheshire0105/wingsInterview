@@ -47,6 +47,15 @@
 		FFCB09342B4CD6C9005F79B3 /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */; };
 		FFCB09362B4CF1B6005F79B3 /* CSQuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09352B4CF1B6005F79B3 /* CSQuestionsViewModel.swift */; };
 		FFCB09382B4CF1C8005F79B3 /* CSQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */; };
+		FFFE8CFA2B4D630600C6CCA7 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */; };
+		FFFE8CFB2B4D630600C6CCA7 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */; };
+		FFFE8CFC2B4D630600C6CCA7 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */; };
+		FFFE8CFD2B4D630600C6CCA7 /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF42B4D630500C6CCA7 /* Pretendard-Thin.ttf */; };
+		FFFE8CFE2B4D630600C6CCA7 /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF52B4D630500C6CCA7 /* Pretendard-ExtraLight.ttf */; };
+		FFFE8CFF2B4D630600C6CCA7 /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF62B4D630500C6CCA7 /* Pretendard-SemiBold.ttf */; };
+		FFFE8D002B4D630600C6CCA7 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF72B4D630500C6CCA7 /* Pretendard-ExtraBold.ttf */; };
+		FFFE8D012B4D630600C6CCA7 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF82B4D630500C6CCA7 /* Pretendard-Bold.ttf */; };
+		FFFE8D022B4D630600C6CCA7 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF92B4D630500C6CCA7 /* Pretendard-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +73,16 @@
 		FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
 		FFCB09352B4CF1B6005F79B3 /* CSQuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSQuestionsViewModel.swift; sourceTree = "<group>"; };
 		FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSQuestionsView.swift; sourceTree = "<group>"; };
+		FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		FFFE8CF42B4D630500C6CCA7 /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		FFFE8CF52B4D630500C6CCA7 /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FFFE8CF62B4D630500C6CCA7 /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		FFFE8CF72B4D630500C6CCA7 /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FFFE8CF82B4D630500C6CCA7 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		FFFE8CF92B4D630500C6CCA7 /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		FFFE8D032B4D637500C6CCA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +126,7 @@
 		FFCB08D32B4BA9FA005F79B3 = {
 			isa = PBXGroup;
 			children = (
+				FFFE8CF02B4D630500C6CCA7 /* font */,
 				FFCB09302B4CD683005F79B3 /* View */,
 				FFCB09292B4CC77A005F79B3 /* ViewModel */,
 				FFCB09262B4CC746005F79B3 /* Model */,
@@ -126,6 +146,7 @@
 		FFCB08DE2B4BA9FA005F79B3 /* wingsInterview */ = {
 			isa = PBXGroup;
 			children = (
+				FFFE8D032B4D637500C6CCA7 /* Info.plist */,
 				FFCB08DF2B4BA9FA005F79B3 /* wingsInterviewApp.swift */,
 				FFCB08E32B4BA9FB005F79B3 /* Assets.xcassets */,
 				FFCB08ED2B4CB810005F79B3 /* GoogleService-Info.plist */,
@@ -170,6 +191,22 @@
 				FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FFFE8CF02B4D630500C6CCA7 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */,
+				FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */,
+				FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */,
+				FFFE8CF42B4D630500C6CCA7 /* Pretendard-Thin.ttf */,
+				FFFE8CF52B4D630500C6CCA7 /* Pretendard-ExtraLight.ttf */,
+				FFFE8CF62B4D630500C6CCA7 /* Pretendard-SemiBold.ttf */,
+				FFFE8CF72B4D630500C6CCA7 /* Pretendard-ExtraBold.ttf */,
+				FFFE8CF82B4D630500C6CCA7 /* Pretendard-Bold.ttf */,
+				FFFE8CF92B4D630500C6CCA7 /* Pretendard-Light.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +299,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFE8CFF2B4D630600C6CCA7 /* Pretendard-SemiBold.ttf in Resources */,
+				FFFE8CFA2B4D630600C6CCA7 /* Pretendard-Medium.ttf in Resources */,
 				FFCB08E72B4BA9FB005F79B3 /* Preview Assets.xcassets in Resources */,
+				FFFE8CFC2B4D630600C6CCA7 /* Pretendard-Regular.ttf in Resources */,
 				FFCB08E42B4BA9FB005F79B3 /* Assets.xcassets in Resources */,
 				FFCB08EE2B4CB810005F79B3 /* GoogleService-Info.plist in Resources */,
+				FFFE8D022B4D630600C6CCA7 /* Pretendard-Light.ttf in Resources */,
+				FFFE8CFB2B4D630600C6CCA7 /* Pretendard-Black.ttf in Resources */,
+				FFFE8D002B4D630600C6CCA7 /* Pretendard-ExtraBold.ttf in Resources */,
+				FFFE8CFD2B4D630600C6CCA7 /* Pretendard-Thin.ttf in Resources */,
+				FFFE8CFE2B4D630600C6CCA7 /* Pretendard-ExtraLight.ttf in Resources */,
+				FFFE8D012B4D630600C6CCA7 /* Pretendard-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +467,7 @@
 				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wingsInterview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +501,7 @@
 				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wingsInterview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

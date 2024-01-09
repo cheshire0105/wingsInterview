@@ -15,7 +15,7 @@ struct MainView: View {
                 TabView(selection: $selectedTabIndex) { // 선택된 탭 인덱스 바인딩
                     ForEach(viewModel.quotes.indices, id: \.self) { index in
                         Text("\(viewModel.quotes[index].quote)\n\n \(viewModel.quotes[index].name)")
-                            .font(.system(size: 18))
+                            .font(.custom("Pretendard-Medium", size: 16))
                             .padding()
                             .frame(width: UIScreen.main.bounds.width - 60, height: 160)
                             .background(Color("MainPageCellBackColor"))
