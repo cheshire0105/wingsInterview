@@ -38,6 +38,7 @@ struct MyPageView: View {
                         }
                     }) {
                         Image(systemName: "house.fill")
+                            .scaledToFit() // 아이콘 이미지의 원본 비율 유지
                     }
 
                     // 블로그 버튼
@@ -46,6 +47,7 @@ struct MyPageView: View {
                         self.showWebView = true
                     }) {
                         Image(systemName: "book.fill")
+                            .scaledToFit() // 아이콘 이미지의 원본 비율 유지
                     }
 
                     // 이메일 버튼 (이메일의 경우 메일 앱 열기)
@@ -55,6 +57,7 @@ struct MyPageView: View {
                         }
                     }) {
                         Image(systemName: "envelope.fill")
+                            .scaledToFit() // 아이콘 이미지의 원본 비율 유지
                     }
                 }
             }
