@@ -26,14 +26,14 @@ struct QuestionDetailView: View {
                         .fontWeight(.bold)
                         // 텍스트 프레임과 정렬 지정
                         .frame(maxWidth: UIScreen.main.bounds.width, alignment: .leading)
-                        .padding(.leading, 18)
+                        .padding(.leading, 17)
                         .padding(.trailing, 10)
 
                     Text(answer)
                         .font(.body)
                         // 텍스트 프레임과 정렬 지정
                         .frame(maxWidth: UIScreen.main.bounds.width, alignment: .leading)
-                        .padding(.leading, 18)
+                        .padding(.leading, 17)
                         .padding(.trailing, 10)
                 }
             }
