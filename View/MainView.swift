@@ -47,7 +47,7 @@ struct MainView: View {
                         }
 
                         // CS 이미지 및 텍스트
-                        NavigationLink(destination: Text("CS Detail View")) {
+                        NavigationLink(destination: CSQuestionsView()) {
                             VStack {
                                 Image(systemName: "cpu")
                                     .resizable()
