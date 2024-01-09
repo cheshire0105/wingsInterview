@@ -35,7 +35,7 @@ struct CSQuestionsView: View {
                 .listStyle(PlainListStyle())
                 Spacer()
             }
-            .navigationTitle("CS 면접 질문")
+            .navigationTitle("CS")
         }
     }
 }

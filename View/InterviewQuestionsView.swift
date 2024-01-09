@@ -35,7 +35,7 @@ struct InterviewQuestionsView: View {
                 .listStyle(PlainListStyle())
                 Spacer()
             }
-            .navigationTitle("iOS 면접 질문")
+            .navigationTitle("iOS")
         }
     }
 }
