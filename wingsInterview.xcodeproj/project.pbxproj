@@ -47,6 +47,9 @@
 		FFCB09342B4CD6C9005F79B3 /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */; };
 		FFCB09362B4CF1B6005F79B3 /* CSQuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09352B4CF1B6005F79B3 /* CSQuestionsViewModel.swift */; };
 		FFCB09382B4CF1C8005F79B3 /* CSQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */; };
+		FFDB1AC62B4D970C00EF6FD9 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */; };
+		FFDB1AC82B4D974600EF6FD9 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */; };
+		FFDB1ACA2B4D976300EF6FD9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC92B4D976300EF6FD9 /* WebView.swift */; };
 		FFFE8CFA2B4D630600C6CCA7 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */; };
 		FFFE8CFB2B4D630600C6CCA7 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */; };
 		FFFE8CFC2B4D630600C6CCA7 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */; };
@@ -74,6 +77,9 @@
 		FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
 		FFCB09352B4CF1B6005F79B3 /* CSQuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSQuestionsViewModel.swift; sourceTree = "<group>"; };
 		FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSQuestionsView.swift; sourceTree = "<group>"; };
+		FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		FFDB1AC92B4D976300EF6FD9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
 		FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 			children = (
 				FFCB09272B4CC765005F79B3 /* Quote.swift */,
 				FFCB092E2B4CD255005F79B3 /* InterviewQuestion.swift */,
+				FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 				FFCB092A2B4CC78B005F79B3 /* QuotesViewModel.swift */,
 				FFCB092C2B4CD233005F79B3 /* InterviewQuestionsViewModel.swift */,
 				FFCB09352B4CF1B6005F79B3 /* CSQuestionsViewModel.swift */,
+				FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 				FFCB09312B4CD698005F79B3 /* InterviewQuestionsView.swift */,
 				FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */,
 				FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */,
+				FFDB1AC92B4D976300EF6FD9 /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +344,9 @@
 				FFCB09282B4CC766005F79B3 /* Quote.swift in Sources */,
 				FFCB08E02B4BA9FA005F79B3 /* wingsInterviewApp.swift in Sources */,
 				FFFE8D052B4D6E5700C6CCA7 /* MyPageView.swift in Sources */,
+				FFDB1AC62B4D970C00EF6FD9 /* MyPageViewModel.swift in Sources */,
+				FFDB1AC82B4D974600EF6FD9 /* UserProfile.swift in Sources */,
+				FFDB1ACA2B4D976300EF6FD9 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
