@@ -4,7 +4,6 @@ struct MainView: View {
     @ObservedObject var viewModel = QuotesViewModel()
 
     var body: some View {
-        NavigationView {
             ZStack {
                 Color("BackColor") // Assets에서 정의된 배경색 사용
                     .edgesIgnoringSafeArea(.all) // Safe area를 무시하고 전체에 적용
@@ -71,7 +70,6 @@ struct MainView: View {
             }
         }
     }
-}
 
 
 
