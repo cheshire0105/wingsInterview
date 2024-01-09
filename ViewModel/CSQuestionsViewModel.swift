@@ -23,13 +23,15 @@ class CSQuestionsViewModel: ObservableObject {
                 print("Error getting documents: \(error)")
             } else if let snapshot = snapshot {
                 DispatchQueue.main.async {
-                    self.questions = snapshot.documents.flatMap { document in
-                        document.data().compactMap { (key, value) in
+                    self.questions = snapshot.documents.map { document in
+                        let documentName = document.documentID
+                        let questionAnswers = document.data().compactMap { (key, value) -> QuestionAnswer? in
                             if let answer = value as? String {
-                                return InterviewQuestion(question: key, answer: answer)
+                                return QuestionAnswer(question: key, answer: answer)
                             }
                             return nil
                         }
+                        return InterviewQuestion(documentName: documentName, questions: questionAnswers)
                     }
                 }
             }

@@ -13,15 +13,24 @@ struct InterviewQuestionsView: View {
 
     var body: some View {
         ZStack {
-            Color("BackColor").edgesIgnoringSafeArea(.all) // 전체 배경색
+            Color("BackColor").edgesIgnoringSafeArea(.all)
 
             VStack {
                 Spacer()
-                List(viewModel.questions) { questionItem in
-                    NavigationLink(destination: QuestionDetailView(question: questionItem.question, answer: questionItem.answer)) {
-                        Text(questionItem.question)
+                List {
+                    ForEach(viewModel.questions) { document in
+                        Section(header: Text(document.documentName)
+                            .foregroundColor(Color("MainPageCellTextColor")) // Assets에서 정의된 텍스트 색상 사용
+                                    .listRowBackground(Color("BackColor"))) { // 섹션 헤더의 배경색
+                            ForEach(document.questions, id: \.question) { qa in
+                                NavigationLink(destination: QuestionDetailView(question: qa.question, answer: qa.answer)) {
+                                    Text(qa.question)
+                                        .foregroundColor(Color("MainPageCellTextColor")) // Assets에서 정의된 텍스트 색상 사용
+                                }
+                                .listRowBackground(Color("BackColor")) // 각 행의 배경색
+                            }
+                        }
                     }
-                    .listRowBackground(Color("BackColor")) // 리스트 각 행의 배경색
                 }
                 .listStyle(PlainListStyle())
                 Spacer()

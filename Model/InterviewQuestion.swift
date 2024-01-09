@@ -9,6 +9,11 @@ import Foundation
 
 struct InterviewQuestion: Identifiable {
     var id = UUID()
+    var documentName: String
+    var questions: [QuestionAnswer]
+}
+
+struct QuestionAnswer {
     var question: String
     var answer: String
 }
