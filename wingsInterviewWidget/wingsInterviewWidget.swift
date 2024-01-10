@@ -68,22 +68,28 @@ struct SimpleEntry: TimelineEntry {
 }
 
 
-struct wingsInterviewWidgetEntryView : View {
+struct wingsInterviewWidgetEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
         VStack {
-
             if let question = entry.question, let firstQA = question.questions.first {
                 Text(firstQA.question)
+                    .foregroundColor(Color("MainPageCellTextColor")) // Assets에서 정의된 텍스트 색상 사용
+
                 Text("\n")
                 Text(firstQA.answer)
-                Text("\n")
+                    .foregroundColor(Color("MainPageCellTextColor")) // Assets에서 정의된 텍스트 색상 사용
 
+                Text("\n")
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity) // 최대 너비와 높이 설정
+        .background(Color("BackColor")) // 배경색 적용
+        .edgesIgnoringSafeArea(.all) // 모든 가장자리를 무시하고 배경색 적용
     }
 }
+
 
 
 
