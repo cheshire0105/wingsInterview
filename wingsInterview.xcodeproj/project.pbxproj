@@ -50,6 +50,14 @@
 		FFDB1AC62B4D970C00EF6FD9 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */; };
 		FFDB1AC82B4D974600EF6FD9 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */; };
 		FFDB1ACA2B4D976300EF6FD9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC92B4D976300EF6FD9 /* WebView.swift */; };
+		FFDB1B272B4E37E700EF6FD9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDB1B262B4E37E700EF6FD9 /* WidgetKit.framework */; };
+		FFDB1B292B4E37E700EF6FD9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDB1B282B4E37E700EF6FD9 /* SwiftUI.framework */; };
+		FFDB1B2C2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1B2B2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift */; };
+		FFDB1B2E2B4E37E700EF6FD9 /* wingsInterviewWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1B2D2B4E37E700EF6FD9 /* wingsInterviewWidgetLiveActivity.swift */; };
+		FFDB1B302B4E37E700EF6FD9 /* wingsInterviewWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1B2F2B4E37E700EF6FD9 /* wingsInterviewWidget.swift */; };
+		FFDB1B322B4E37E700EF6FD9 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1B312B4E37E700EF6FD9 /* AppIntent.swift */; };
+		FFDB1B342B4E37E900EF6FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDB1B332B4E37E900EF6FD9 /* Assets.xcassets */; };
+		FFDB1B382B4E37E900EF6FD9 /* wingsInterviewWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FFDB1B242B4E37E700EF6FD9 /* wingsInterviewWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FFFE8CFA2B4D630600C6CCA7 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */; };
 		FFFE8CFB2B4D630600C6CCA7 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */; };
 		FFFE8CFC2B4D630600C6CCA7 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */; };
@@ -61,6 +69,30 @@
 		FFFE8D022B4D630600C6CCA7 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFE8CF92B4D630500C6CCA7 /* Pretendard-Light.ttf */; };
 		FFFE8D052B4D6E5700C6CCA7 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFE8D042B4D6E5700C6CCA7 /* MyPageView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFDB1B362B4E37E900EF6FD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFCB08D42B4BA9FA005F79B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFDB1B232B4E37E700EF6FD9;
+			remoteInfo = wingsInterviewWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFDB1B3C2B4E37E900EF6FD9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FFDB1B382B4E37E900EF6FD9 /* wingsInterviewWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FFCB08DC2B4BA9FA005F79B3 /* wingsInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wingsInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +112,15 @@
 		FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
 		FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		FFDB1AC92B4D976300EF6FD9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FFDB1B242B4E37E700EF6FD9 /* wingsInterviewWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wingsInterviewWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDB1B262B4E37E700EF6FD9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FFDB1B282B4E37E700EF6FD9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FFDB1B2B2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wingsInterviewWidgetBundle.swift; sourceTree = "<group>"; };
+		FFDB1B2D2B4E37E700EF6FD9 /* wingsInterviewWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wingsInterviewWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		FFDB1B2F2B4E37E700EF6FD9 /* wingsInterviewWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wingsInterviewWidget.swift; sourceTree = "<group>"; };
+		FFDB1B312B4E37E700EF6FD9 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		FFDB1B332B4E37E900EF6FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFDB1B352B4E37E900EF6FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
 		FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
@@ -128,6 +169,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFDB1B212B4E37E700EF6FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDB1B292B4E37E700EF6FD9 /* SwiftUI.framework in Frameworks */,
+				FFDB1B272B4E37E700EF6FD9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -139,6 +189,8 @@
 				FFCB09292B4CC77A005F79B3 /* ViewModel */,
 				FFCB09262B4CC746005F79B3 /* Model */,
 				FFCB08DE2B4BA9FA005F79B3 /* wingsInterview */,
+				FFDB1B2A2B4E37E700EF6FD9 /* wingsInterviewWidget */,
+				FFDB1B252B4E37E700EF6FD9 /* Frameworks */,
 				FFCB08DD2B4BA9FA005F79B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				FFCB08DC2B4BA9FA005F79B3 /* wingsInterview.app */,
+				FFDB1B242B4E37E700EF6FD9 /* wingsInterviewWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +258,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FFDB1B252B4E37E700EF6FD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFDB1B262B4E37E700EF6FD9 /* WidgetKit.framework */,
+				FFDB1B282B4E37E700EF6FD9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFDB1B2A2B4E37E700EF6FD9 /* wingsInterviewWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FFDB1B2B2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift */,
+				FFDB1B2D2B4E37E700EF6FD9 /* wingsInterviewWidgetLiveActivity.swift */,
+				FFDB1B2F2B4E37E700EF6FD9 /* wingsInterviewWidget.swift */,
+				FFDB1B312B4E37E700EF6FD9 /* AppIntent.swift */,
+				FFDB1B332B4E37E900EF6FD9 /* Assets.xcassets */,
+				FFDB1B352B4E37E900EF6FD9 /* Info.plist */,
+			);
+			path = wingsInterviewWidget;
+			sourceTree = "<group>";
+		};
 		FFFE8CF02B4D630500C6CCA7 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +306,12 @@
 				FFCB08D82B4BA9FA005F79B3 /* Sources */,
 				FFCB08D92B4BA9FA005F79B3 /* Frameworks */,
 				FFCB08DA2B4BA9FA005F79B3 /* Resources */,
+				FFDB1B3C2B4E37E900EF6FD9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FFDB1B372B4E37E900EF6FD9 /* PBXTargetDependency */,
 			);
 			name = wingsInterview;
 			packageProductDependencies = (
@@ -270,6 +347,23 @@
 			productReference = FFCB08DC2B4BA9FA005F79B3 /* wingsInterview.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FFDB1B232B4E37E700EF6FD9 /* wingsInterviewWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDB1B392B4E37E900EF6FD9 /* Build configuration list for PBXNativeTarget "wingsInterviewWidgetExtension" */;
+			buildPhases = (
+				FFDB1B202B4E37E700EF6FD9 /* Sources */,
+				FFDB1B212B4E37E700EF6FD9 /* Frameworks */,
+				FFDB1B222B4E37E700EF6FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wingsInterviewWidgetExtension;
+			productName = wingsInterviewWidgetExtension;
+			productReference = FFDB1B242B4E37E700EF6FD9 /* wingsInterviewWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +375,9 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					FFCB08DB2B4BA9FA005F79B3 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					FFDB1B232B4E37E700EF6FD9 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -302,6 +399,7 @@
 			projectRoot = "";
 			targets = (
 				FFCB08DB2B4BA9FA005F79B3 /* wingsInterview */,
+				FFDB1B232B4E37E700EF6FD9 /* wingsInterviewWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +421,14 @@
 				FFFE8CFD2B4D630600C6CCA7 /* Pretendard-Thin.ttf in Resources */,
 				FFFE8CFE2B4D630600C6CCA7 /* Pretendard-ExtraLight.ttf in Resources */,
 				FFFE8D012B4D630600C6CCA7 /* Pretendard-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDB1B222B4E37E700EF6FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDB1B342B4E37E900EF6FD9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +456,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFDB1B202B4E37E700EF6FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDB1B302B4E37E700EF6FD9 /* wingsInterviewWidget.swift in Sources */,
+				FFDB1B322B4E37E700EF6FD9 /* AppIntent.swift in Sources */,
+				FFDB1B2C2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift in Sources */,
+				FFDB1B2E2B4E37E700EF6FD9 /* wingsInterviewWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFDB1B372B4E37E900EF6FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFDB1B232B4E37E700EF6FD9 /* wingsInterviewWidgetExtension */;
+			targetProxy = FFDB1B362B4E37E900EF6FD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FFCB08E82B4BA9FB005F79B3 /* Debug */ = {
@@ -475,10 +600,11 @@
 		FFCB08EB2B4BA9FB005F79B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wingsInterview/Preview Content\"";
 				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
 				ENABLE_PREVIEWS = YES;
@@ -509,10 +635,11 @@
 		FFCB08EC2B4BA9FB005F79B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wingsInterview/Preview Content\"";
 				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
 				ENABLE_PREVIEWS = YES;
@@ -540,6 +667,60 @@
 			};
 			name = Release;
 		};
+		FFDB1B3A2B4E37E900EF6FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wingsInterviewWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wingsInterviewWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheshire0105.wingsInterview.wingsInterviewWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFDB1B3B2B4E37E900EF6FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wingsInterviewWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wingsInterviewWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheshire0105.wingsInterview.wingsInterviewWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +738,15 @@
 			buildConfigurations = (
 				FFCB08EB2B4BA9FB005F79B3 /* Debug */,
 				FFCB08EC2B4BA9FB005F79B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDB1B392B4E37E900EF6FD9 /* Build configuration list for PBXNativeTarget "wingsInterviewWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDB1B3A2B4E37E900EF6FD9 /* Debug */,
+				FFDB1B3B2B4E37E900EF6FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
