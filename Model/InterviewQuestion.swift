@@ -7,13 +7,14 @@
 
 import Foundation
 
-struct InterviewQuestion: Identifiable {
-    var id = UUID()
+struct InterviewQuestion: Encodable, Identifiable {
+    let id = UUID() // 각 인스턴스에 대해 유일한 ID 생성
+
     var documentName: String
     var questions: [QuestionAnswer]
 }
 
-struct QuestionAnswer {
+struct QuestionAnswer: Encodable {
     var question: String
     var answer: String
 }

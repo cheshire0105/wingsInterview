@@ -121,6 +121,8 @@
 		FFDB1B312B4E37E700EF6FD9 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		FFDB1B332B4E37E900EF6FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFDB1B352B4E37E900EF6FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDB1B3D2B4E3AF300EF6FD9 /* wingsInterview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wingsInterview.entitlements; sourceTree = "<group>"; };
+		FFDB1B3E2B4E3B7F00EF6FD9 /* wingsInterviewWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wingsInterviewWidgetExtension.entitlements; sourceTree = "<group>"; };
 		FFFE8CF12B4D630500C6CCA7 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
 		FFFE8CF22B4D630500C6CCA7 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		FFFE8CF32B4D630500C6CCA7 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		FFCB08D32B4BA9FA005F79B3 = {
 			isa = PBXGroup;
 			children = (
+				FFDB1B3E2B4E3B7F00EF6FD9 /* wingsInterviewWidgetExtension.entitlements */,
 				FFFE8CF02B4D630500C6CCA7 /* font */,
 				FFCB09302B4CD683005F79B3 /* View */,
 				FFCB09292B4CC77A005F79B3 /* ViewModel */,
@@ -207,6 +210,7 @@
 		FFCB08DE2B4BA9FA005F79B3 /* wingsInterview */ = {
 			isa = PBXGroup;
 			children = (
+				FFDB1B3D2B4E3AF300EF6FD9 /* wingsInterview.entitlements */,
 				FFFE8D032B4D637500C6CCA7 /* Info.plist */,
 				FFCB08DF2B4BA9FA005F79B3 /* wingsInterviewApp.swift */,
 				FFCB08E32B4BA9FB005F79B3 /* Assets.xcassets */,
@@ -603,6 +607,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wingsInterview/wingsInterview.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wingsInterview/Preview Content\"";
@@ -638,6 +643,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wingsInterview/wingsInterview.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wingsInterview/Preview Content\"";
@@ -672,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = wingsInterviewWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2L2X5S9BFQ;
@@ -699,6 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = wingsInterviewWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2L2X5S9BFQ;

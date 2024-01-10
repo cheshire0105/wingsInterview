@@ -33,8 +33,19 @@ class CSQuestionsViewModel: ObservableObject {
                         }
                         return InterviewQuestion(documentName: documentName, questions: questionAnswers)
                     }
+                    self.saveDataToAppGroup(questions: self.questions)
+
                 }
             }
         }
     }
+
+    private func saveDataToAppGroup(questions: [InterviewQuestion]) {
+         if let userDefaults = UserDefaults(suiteName: "group.com.cheshire0105.wingsInterview") {
+             let encoder = JSONEncoder()
+             if let encoded = try? encoder.encode(questions) {
+                 userDefaults.set(encoded, forKey: "InterviewQuestions")
+             }
+         }
+     }
 }

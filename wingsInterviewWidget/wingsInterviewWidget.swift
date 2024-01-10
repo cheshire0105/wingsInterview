@@ -10,46 +10,82 @@ import SwiftUI
 
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
+        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent(), question: nil)
     }
 
     func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+        SimpleEntry(date: Date(), configuration: configuration, question: nil)
     }
-    
+
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+        let questions = fetchQuestionsFromAppGroup()
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+
+        for secondOffset in stride(from: 0, to: 5 * 30, by: 30) {
+            let entryDate = Calendar.current.date(byAdding: .second, value: secondOffset, to: currentDate)!
+            let randomQuestion = randomQuestion(from: questions)
+            let entry = SimpleEntry(date: entryDate, configuration: configuration, question: randomQuestion)
             entries.append(entry)
         }
 
         return Timeline(entries: entries, policy: .atEnd)
     }
+
+
+
+    private func fetchQuestionsFromAppGroup() -> [InterviewQuestion] {
+        if let userDefaults = UserDefaults(suiteName: "group.com.cheshire0105.wingsInterview") {
+            let decoder = JSONDecoder()
+            if let questionsData = userDefaults.data(forKey: "InterviewQuestions") {
+                print("Fetched Data: \(questionsData)")
+                if let questions = try? decoder.decode([InterviewQuestion].self, from: questionsData) {
+                    print("Decoded Questions: \(questions)")
+                    return questions
+                } else {
+                    print("Failed to decode questions")
+                }
+            } else {
+                print("No questions data found")
+            }
+        }
+        return []
+    }
+
+    private func randomQuestion(from questions: [InterviewQuestion]) -> InterviewQuestion? {
+        guard !questions.isEmpty else { return nil }
+        return questions.randomElement()
+    }
+
+
+
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
+    let question: InterviewQuestion? // 서버에서 가져온 질문 추가
 }
+
 
 struct wingsInterviewWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
         VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
 
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+            if let question = entry.question, let firstQA = question.questions.first {
+                Text(firstQA.question)
+                Text("\n")
+                Text(firstQA.answer)
+                Text("\n")
+
+            }
         }
     }
 }
+
+
 
 struct wingsInterviewWidget: Widget {
     let kind: String = "wingsInterviewWidget"
@@ -68,7 +104,7 @@ extension ConfigurationAppIntent {
         intent.favoriteEmoji = "😀"
         return intent
     }
-    
+
     fileprivate static var starEyes: ConfigurationAppIntent {
         let intent = ConfigurationAppIntent()
         intent.favoriteEmoji = "🤩"
@@ -79,6 +115,18 @@ extension ConfigurationAppIntent {
 #Preview(as: .systemSmall) {
     wingsInterviewWidget()
 } timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
+    SimpleEntry(date: .now, configuration: .smiley, question: nil)
+    SimpleEntry(date: .now, configuration: .starEyes, question: nil)
+}
+
+import Foundation
+
+struct InterviewQuestion: Codable {
+    var documentName: String
+    var questions: [QuestionAnswer]
+}
+
+struct QuestionAnswer: Codable {
+    var question: String
+    var answer: String
 }
