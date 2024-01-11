@@ -72,25 +72,29 @@ struct wingsInterviewWidgetEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
-        ZStack{
-            
+        ZStack {
+            Color("WidgetBackground") // 배경색 적용
+
             VStack {
-                
                 if let question = entry.question, let firstQA = question.questions.first {
                     Text(firstQA.question)
-                        .foregroundColor(Color("MainPageCellTextColor")) // Assets에서 정의된 텍스트 색상 사용
+                        .foregroundColor(Color("MainPageCellTextColor"))
 
                     Text("\n")
                     Text(firstQA.answer)
-                        .foregroundColor(Color("MainPageCellTextColor")) // Assets에서 정의된 텍스트 색상 사용
+                        .foregroundColor(Color("MainPageCellTextColor"))
 
                     Text("\n")
                 }
             }
-
         }
+        
+//        .containerBackground(for: .widget) {
+//            Color.widgetBackground
+//        }
     }
 }
+
 
 
 
@@ -102,7 +106,10 @@ struct wingsInterviewWidget: Widget {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
             wingsInterviewWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
+
         }
+        .contentMarginsDisabled()
+
     }
 }
 
