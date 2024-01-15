@@ -9,8 +9,9 @@ import SwiftUI
 
 struct MyPageView: View {
     @ObservedObject var viewModel = MyPageViewModel()
-    @State private var showWebView = false
-    @State private var selectedURL: URL?
+       @State private var selectedURL: URL?
+       @State private var showSafariView = false
+
 
     var body: some View {
         ZStack {
@@ -31,8 +32,7 @@ struct MyPageView: View {
                 HStack {
                     // 홈페이지 버튼
                     Button(action: {
-                        self.selectedURL = URL(string: "https://www.google.com")
-                        self.showWebView = true
+                        self.showSafariView = true
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { // 2초 후에 사용자의 홈페이지로 이동
                             self.selectedURL = URL(string: viewModel.userProfile.homepageURL)
                         }
@@ -44,7 +44,7 @@ struct MyPageView: View {
                     // 블로그 버튼
                     Button(action: {
                         self.selectedURL = URL(string: viewModel.userProfile.blogURL)
-                        self.showWebView = true
+                        self.showSafariView = true
                     }) {
                         Image(systemName: "book.fill")
                             .scaledToFit() // 아이콘 이미지의 원본 비율 유지
@@ -62,11 +62,11 @@ struct MyPageView: View {
                 }
             }
         }
-        .sheet(isPresented: $showWebView) {
-            if let url = selectedURL {
-                WebView(url: url)
-            }
-        }
+        .fullScreenCover(isPresented: $showSafariView, content: {
+                   if let url = selectedURL {
+                       SafariView(url: url)
+                   }
+               })
         .onAppear {
             viewModel.fetchProfileData()
         }
@@ -86,3 +86,17 @@ struct MyPageView_Previews: PreviewProvider {
 
 
 
+import SafariServices
+import SwiftUI
+
+struct SafariView: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController {
+        return SFSafariViewController(url: url)
+    }
+
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {
+        // 여기서 필요한 경우 뷰 컨트롤러를 업데이트합니다.
+    }
+}
