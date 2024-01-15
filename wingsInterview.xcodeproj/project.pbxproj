@@ -49,7 +49,7 @@
 		FFCB09382B4CF1C8005F79B3 /* CSQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */; };
 		FFDB1AC62B4D970C00EF6FD9 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */; };
 		FFDB1AC82B4D974600EF6FD9 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */; };
-		FFDB1ACA2B4D976300EF6FD9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC92B4D976300EF6FD9 /* WebView.swift */; };
+		FFDB1ACA2B4D976300EF6FD9 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1AC92B4D976300EF6FD9 /* SafariView.swift */; };
 		FFDB1B272B4E37E700EF6FD9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDB1B262B4E37E700EF6FD9 /* WidgetKit.framework */; };
 		FFDB1B292B4E37E700EF6FD9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDB1B282B4E37E700EF6FD9 /* SwiftUI.framework */; };
 		FFDB1B2C2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB1B2B2B4E37E700EF6FD9 /* wingsInterviewWidgetBundle.swift */; };
@@ -111,7 +111,7 @@
 		FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSQuestionsView.swift; sourceTree = "<group>"; };
 		FFDB1AC52B4D970C00EF6FD9 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
 		FFDB1AC72B4D974600EF6FD9 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		FFDB1AC92B4D976300EF6FD9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FFDB1AC92B4D976300EF6FD9 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		FFDB1B242B4E37E700EF6FD9 /* wingsInterviewWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wingsInterviewWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDB1B262B4E37E700EF6FD9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		FFDB1B282B4E37E700EF6FD9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -257,7 +257,7 @@
 				FFCB09312B4CD698005F79B3 /* InterviewQuestionsView.swift */,
 				FFCB09332B4CD6C9005F79B3 /* QuestionDetailView.swift */,
 				FFCB09372B4CF1C8005F79B3 /* CSQuestionsView.swift */,
-				FFDB1AC92B4D976300EF6FD9 /* WebView.swift */,
+				FFDB1AC92B4D976300EF6FD9 /* SafariView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,7 +456,7 @@
 				FFFE8D052B4D6E5700C6CCA7 /* MyPageView.swift in Sources */,
 				FFDB1AC62B4D970C00EF6FD9 /* MyPageViewModel.swift in Sources */,
 				FFDB1AC82B4D974600EF6FD9 /* UserProfile.swift in Sources */,
-				FFDB1ACA2B4D976300EF6FD9 /* WebView.swift in Sources */,
+				FFDB1ACA2B4D976300EF6FD9 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
